@@ -18,7 +18,7 @@ library(janitor)
 library(ggplot2)
 ```
 
-### Exercise 1
+## Exercise 1: plotting the penguins dataset
 
 1. Make a plot of the Palmer penguin dataset, with flipper length on the horizontal axis and body mass on the vertical axis. Use color and shape to distinguish between different **species** of penguins
 
@@ -26,7 +26,13 @@ library(ggplot2)
 
 3. Make a box plot of the body mass of the penguins as a function of species
 
-### Exercise 2
+## Exercise 2: biomass power-law scaling
+
+Hatton et. al. (doi:10.1126/science.aac6284) found that predator biomass and prey biomass follows a power-law relationship across broad communities. Part of the data they used, for the case of Atlantic Ocean phytoplankton and microzooplankton, are extracted to the file marine_prey_predator_biomass.csv under the data folder.
+
+Using the said data, make a scatter plot of predator (y) versus prey (x) biomass on a log-log scale. Include the x and y axes labels, and make sure that the unit has proper superscript. Also provide a suitable title to the plot.
+
+## Exercise 3: NO₃⁻ and chlorophyll concentrations
 
 The data file `mercator_no3_chl.csv` contains NO₃⁻ concentration (in mmol m⁻³) and chlorophyll concentration (in mg m⁻³), measured in June 2025, averaged over longitude between 150°W and 130°W, as functions of latitude and depth.
 
@@ -36,7 +42,13 @@ Hint: in your `gemo_rect()` call you will need to map the aesthetics `xmin`, `xm
 
 2. Make a second raster plot with the same settings except making the color scale logarithmic
 
-### Exercise 3
+## Exercise 4: plotting the penguins dataset redux
 
 Going back to the penguins dataset, make a figure consisting of 9 panels: 3 columns that indicate different species and 3 rows that indicate different islands. On each panel plots bill length against body mass. Make sure that all panels share the same set of x and y axes
+
+## (Optional) Feedback questions
+
+1. Are there any topic(s) from this week that still confuse you?
+
+2. Which activities work and which doesn't? What do you want to see change and what do you want to keep?
 
