@@ -246,6 +246,15 @@ Repeat the same using the brewer scale
 mpg_class_plot + scale_fill_brewer(palette="Dark2")
 ```
 
+Using scale_color_manual and the constant aesthetics trick together
+
+```{r}
+ggplot(mpg) + 
+  geom_point(aes(x=displ, y=hwy, color="hwy")) +
+  geom_point(aes(x=displ, y=cty, color="cty")) + 
+  scale_color_manual(values=c("red", "blue"))
+```
+
 ### Linear versus logarithmic color scale
 
 Load data that represent an exponentiated parabolic saddle point
